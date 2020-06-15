@@ -34,7 +34,7 @@
     </div>
     <div class="main_content">
         <div class="header">Welcome to CSGO tactics site.</div>
-        <div class="success"> <p>Tactic added successfully!</p>
+        <div class="success"> <p>Account was created successfully.
             <br>
             <button onClick="javascript:location.href='/home'">back to homepage</button>
         </div>

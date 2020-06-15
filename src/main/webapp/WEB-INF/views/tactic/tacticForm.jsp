@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@    taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,31 +39,59 @@
         <div class="tactic_form">
             <%--@elvariable id="tactic" type="babinski.sebastian.model.Tactic"--%>
             <form:form modelAttribute="tactic" method="post">
-                Tactic name: <form:input path="tacticName"/><br/>
-                Map:
-                <form:select path="tacticMap">
-                    <form:option value="dust2">dust2</form:option>
-                    <form:option value="inferno">inferno</form:option>
-                    <form:option value="mirage">mirage</form:option>
-                    <form:option value="nuke">nuke</form:option>
-                    <form:option value="overpass">overpass</form:option>
-                    <form:option value="train">train</form:option>
-                    <form:option value="vertigo">vertigo</form:option>
-                </form:select><br/>
-                <form:select path="tacticSide">
-                    <form:option value="terro">T</form:option>
-                    <form:option value="ct">CT</form:option>
-                </form:select>
-                Round:
-                <form:select path="tacticRound">
-                    <form:option value="pistol">pistol</form:option>
-                    <form:option value="eco">eco</form:option>
-                    <form:option value="force">force</form:option>
-                    <form:option value="fullbuy">fullbuy</form:option>
-                </form:select><br/>
-                <form:textarea path="tacticText" style="overflow:auto;resize:none" rows="3" cols="20"/> <br/>
-                Video url: <form:input path="tacticURL"/><br/>
-                <input type="submit" value="submit">
+                <table>
+                    <tr>
+                        <td>
+                            <form:input path="tacticName" placeholder="tactic name"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form:select path="tacticMap">
+                                <form:option value="dust2">dust2</form:option>
+                                <form:option value="inferno">inferno</form:option>
+                                <form:option value="mirage">mirage</form:option>
+                                <form:option value="nuke">nuke</form:option>
+                                <form:option value="overpass">overpass</form:option>
+                                <form:option value="train">train</form:option>
+                                <form:option value="vertigo">vertigo</form:option>
+                            </form:select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form:select path="tacticSide">
+                                <form:option value="terro">T</form:option>
+                                <form:option value="ct">CT</form:option>
+                            </form:select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form:select path="tacticRound">
+                                <form:option value="pistol">pistol</form:option>
+                                <form:option value="eco">eco</form:option>
+                                <form:option value="force">force</form:option>
+                                <form:option value="fullbuy">fullbuy</form:option>
+                            </form:select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <form:textarea path="tacticText" style="overflow:auto;resize:none" rows="3" cols="20"/>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td>
+                            <form:input path="tacticURL"/><br/>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
             </form:form>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@    taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +15,8 @@
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
+
+
 <div class="wrapper">
     <div class="sidebar">
         <h2>CSGO Tactics</h2>
@@ -34,9 +36,31 @@
     </div>
     <div class="main_content">
         <div class="header">Welcome to CSGO tactics site.</div>
-        <div class="success"> <p>Tactic added successfully!</p>
-            <br>
-            <button onClick="javascript:location.href='/home'">back to homepage</button>
+        <div class="tactic_form">
+            <%--@elvariable id="user" type="babinski.sebastian.model.User"--%>
+            <form:form modelAttribute="user" method="post">
+                <table>
+                    <tr>
+<%--                        <td><form:label path="nickName">Nick name</form:label></td>--%>
+                        <td><form:input path="nickName" placeholder="nickname"></form:input><br/></td>
+                        <td><form:errors path="nickName">Please enter your nickname.</form:errors></td>
+                    </tr>
+                    <tr>
+<%--                        <td><form:label path="email">Email</form:label></td>--%>
+                        <td><form:input path="email" type="email" placeholder="email"></form:input></td>
+                    </tr>
+                    <tr>
+<%--                        <td><form:label path="password">Password</form:label></td>--%>
+                        <td><form:password path="password" placeholder="password"></form:password></td>
+                        <td><form:errors path="password">Please enter password.</form:errors></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form:form>
         </div>
     </div>
 </div>
