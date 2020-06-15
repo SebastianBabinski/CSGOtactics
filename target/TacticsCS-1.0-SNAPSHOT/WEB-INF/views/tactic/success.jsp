@@ -11,7 +11,7 @@
     </style>
     <meta charset="UTF-8">
     <title>CSGO tactics</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
@@ -34,7 +34,9 @@
     </div>
     <div class="main_content">
         <div class="header">Welcome to CSGO tactics site.</div>
-        <div class="success"> Tactic added successfully!
+        <div class="success"> <p>Tactic added successfully!</p>
+            <br>
+            <button onClick="javascript:location.href='/home'">Back to home page</button>
         </div>
     </div>
 </div>

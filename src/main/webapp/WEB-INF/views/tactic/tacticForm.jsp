@@ -11,7 +11,7 @@
     </style>
     <meta charset="UTF-8">
     <title>CSGO tactics</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>

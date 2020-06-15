@@ -130,10 +130,10 @@ body{
 
 .wrapper .main_content .success {
 
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     text-align: center;
-    display: flex;
+    /*display: flex;*/
     width: 600px;
     margin: 24% auto;
     background-color: #ffffff;
