@@ -36,14 +36,14 @@
     </div>
     <div class="main_content">
         <div class="header">Welcome to CSGO tactics site.</div>
-        <div class="tactic_form">
+        <div class="register_form">
             <%--@elvariable id="user" type="babinski.sebastian.model.User"--%>
             <form:form modelAttribute="user" method="post">
                 <table>
                     <tr>
 <%--                        <td><form:label path="nickName">Nick name</form:label></td>--%>
                         <td><form:input path="nickName" placeholder="nickname"></form:input><br/></td>
-                        <td><form:errors path="nickName">Please enter your nickname.</form:errors></td>
+                        <tr><form:errors path="nickName">Please enter your nickname.<br/></form:errors></tr>
                     </tr>
                     <tr>
 <%--                        <td><form:label path="email">Email</form:label></td>--%>
@@ -52,11 +52,11 @@
                     <tr>
 <%--                        <td><form:label path="password">Password</form:label></td>--%>
                         <td><form:password path="password" placeholder="password"></form:password></td>
-                        <td><form:errors path="password">Please enter password.</form:errors></td>
+                        <tr><form:errors path="password">Please enter password.<br/></form:errors></tr>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="submit" value="submit">
+                            <input class="button" type="submit" value="submit">
                         </td>
                     </tr>
                 </table>

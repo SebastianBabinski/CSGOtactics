@@ -57,7 +57,7 @@ body{
 }
 
 .wrapper .sidebar ul li:hover{
-    background-color: #de9b35;
+    background-color: rgba(227, 128, 78, 0.3)
 }
 
 .wrapper .sidebar ul li:hover a{
@@ -109,31 +109,9 @@ body{
 
 }
 
-.wrapper .main_content .tactic_form {
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    width: 600px;
-    margin: 19% auto;
-    background-color: #ffffff;
-    opacity: 0.8;
-    border: 1px solid black;
-    padding: 10px;
-
-}
-
-.wrapper .main_content .tactic_form div{
-    margin-bottom: 20px;
-}
-
 .wrapper .main_content .success {
 
-    /*align-items: center;*/
-    /*justify-content: center;*/
     text-align: center;
-    /*display: flex;*/
     width: 600px;
     margin: 24% auto;
     background-color: #ffffff;
@@ -143,4 +121,58 @@ body{
 }
 .wrapper .main_content .success div{
     margin-bottom: 20px;
+}
+
+.wrapper .main_content .tactic_form {
+    position: relative;
+    z-index: 1;
+    background: rgba(21, 26, 31, 0.6);
+    max-width: 500px;
+    margin: 150px auto 100px;
+    padding: 45px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.wrapper .main_content .tactic_form input, select, textarea {
+    outline: 0;
+    background: #f2f2f2;
+    width: 400px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.wrapper .main_content .tactic_form input:hover,.tactic_form input:active,.tactic_form input:focus, .tactic_form select:hover,.tactic_form select:active,.tactic_form select:focus, .tactic_form textarea:hover,.tactic_form textarea:active,.tactic_form textarea:focus {
+    background: rgba(227, 128, 78, 0.3);
+}
+
+.wrapper .main_content .register_form {
+    position: relative;
+    z-index: 1;
+    background: rgba(21, 26, 31, 0.6);
+    max-width: 300px;
+    margin: 250px auto 100px;
+    padding: 45px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.wrapper .main_content .register_form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.wrapper .main_content .register_form input:hover,.register_form input:active,.register_form input:focus {
+    background: rgba(227, 128, 78, 0.3);
 }

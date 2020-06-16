@@ -48,6 +48,7 @@
                     <tr>
                         <td>
                             <form:select path="tacticMap">
+                                <form:option value="" label="select map" />
                                 <form:option value="dust2">dust2</form:option>
                                 <form:option value="inferno">inferno</form:option>
                                 <form:option value="mirage">mirage</form:option>
@@ -61,6 +62,7 @@
                     <tr>
                         <td>
                             <form:select path="tacticSide">
+                                <form:option value="" label="select side" />
                                 <form:option value="terro">T</form:option>
                                 <form:option value="ct">CT</form:option>
                             </form:select>
@@ -69,6 +71,7 @@
                     <tr>
                         <td>
                             <form:select path="tacticRound">
+                                <form:option value="" label="select tactic round"/>
                                 <form:option value="pistol">pistol</form:option>
                                 <form:option value="eco">eco</form:option>
                                 <form:option value="force">force</form:option>
@@ -78,12 +81,12 @@
                     </tr>
                     <tr>
                         <td>
-                                <form:textarea path="tacticText" style="overflow:auto;resize:none" rows="3" cols="20"/>
+                                <form:textarea path="tacticText" style="overflow:auto;resize:none" placeholder="tactic description" rows="5" cols="20"/>
                         </td>
                     </tr>
                             <tr>
                                 <td>
-                            <form:input path="tacticURL"/><br/>
+                            <form:input path="tacticURL" placeholder="tactic video (optional)"/><br/>
                                 </td>
                             </tr>
                     <tr>
