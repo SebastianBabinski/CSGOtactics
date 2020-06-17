@@ -22,14 +22,14 @@ public class UserController {
         this.tacticDao = tacticDao;
     }
 
-    @RequestMapping(path = "/user/form", method = RequestMethod.GET)
+    @RequestMapping(path = "/register", method = RequestMethod.GET)
     public String showRegisterForm(@RequestParam(required = false) Long id, Model model) {
         User user = id == null ? new User() : userDao.getById(id);
         model.addAttribute("user", user);
         return "user/registerForm";
     }
 
-    @RequestMapping(path = "/user/form", method = RequestMethod.POST)
+    @RequestMapping(path = "/register", method = RequestMethod.POST)
     public String saveRegisterForm(@Valid User user, BindingResult userBindingResult) {
         if (userBindingResult.hasErrors()) {
             return "user/registerForm";
@@ -40,6 +40,11 @@ public class UserController {
             userDao.update(user);
         }
         return "/user/registerSuccess";
+    }
+
+    @RequestMapping(path = "/login")
+    public String loginForm() {
+        return "user/login";
     }
 
 //    @RequestMapping(path = "/user/save")

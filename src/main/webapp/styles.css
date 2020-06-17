@@ -176,3 +176,9 @@ body{
 .wrapper .main_content .register_form input:hover,.register_form input:active,.register_form input:focus {
     background: rgba(227, 128, 78, 0.3);
 }
+
+.wrapper .main_content .addnote {
+    color: white;
+    font-size: 13px;
+
+}

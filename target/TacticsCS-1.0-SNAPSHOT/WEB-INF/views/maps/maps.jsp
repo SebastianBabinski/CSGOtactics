@@ -42,7 +42,7 @@
                     Side: ${tactic.tacticSide}<br/>
                     Round: ${tactic.tacticRound}<br/>
                     Description: ${tactic.tacticText}<br/>
-                    Movie: ${tactic.tacticURL}<br/>
+                    Video: ${tactic.tacticURL}<br/>
                     <hr/>
                 </c:forEach>
         </div>

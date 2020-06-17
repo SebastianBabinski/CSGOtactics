@@ -23,8 +23,8 @@
             <li><a href="maps"><i class="far fa-map"></i>Maps</a></li>
             <li><a href="addtactic"><i class="fas fa-plus"></i>Add tactic</a></li>
             <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-            <li><a href="#"><i class="fas fa-sign-in-alt"></i>Log in</a></li>
-            <li><a href="user/form"><i class="fas fa-registered"></i>Register</a></li>
+            <li><a href="login"><i class="fas fa-sign-in-alt"></i>Log in</a></li>
+            <li><a href="register"><i class="fas fa-registered"></i>Register</a></li>
         </ul>
         <div class="social_media">
             <a href="facebook"><i class="fab fa-facebook-f"></i></a>
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="main_content">
-        <div class="header">Welcome to CSGO tactics site.</div>
+        <div class="header">Profile registration.</div>
         <div class="success"> <p>Account was created successfully.
             <br>
             <button onClick="javascript:location.href='/home'">back to homepage</button>

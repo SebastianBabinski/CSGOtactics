@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@    taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
             <li><a href="maps"><i class="far fa-map"></i>Maps</a></li>
             <li><a href="addtactic"><i class="fas fa-plus"></i>Add tactic</a></li>
             <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-            <li><a href="login"><i class="fas fa-sign-in-alt"></i>Log in</a></li>
+            <li><a href="#"><i class="fas fa-sign-in-alt"></i>Log in</a></li>
             <li><a href="register"><i class="fas fa-registered"></i>Register</a></li>
         </ul>
         <div class="social_media">
@@ -35,33 +35,23 @@
         </div>
     </div>
     <div class="main_content">
-        <div class="header">Profile registration.</div>
+        <div class="header">Profile sign in.</div>
         <div class="register_form">
-            <%--@elvariable id="user" type="babinski.sebastian.model.User"--%>
-            <form:form modelAttribute="user" method="post">
+            <form>
                 <table>
                     <tr>
-<%--                        <td><form:label path="nickName">Nick name</form:label></td>--%>
-                        <td><form:input path="nickName" placeholder="nickname"></form:input><br/></td>
-                        <tr><form:errors path="nickName">Please enter your nickname.<br/></form:errors></tr>
-                    </tr>
+                        <td><input placeholder="nickname"/></td>
                     <tr>
-<%--                        <td><form:label path="email">Email</form:label></td>--%>
-                        <td><form:input path="email" type="email" placeholder="email"></form:input></td>
-                    </tr>
                     <tr>
-<%--                        <td><form:label path="password">Password</form:label></td>--%>
-                        <td><form:password path="password" placeholder="password"></form:password></td>
-                        <tr><form:errors path="password">Please enter password.<br/></form:errors></tr>
+                        <td><input type="password" placeholder="password"/></td>
                     </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input class="button" type="submit" value="submit">
-                        </td>
+                    <td colspan="2">
+                        <input class="button" type="submit" value="submit">
+                    </td>
                     </tr>
-                    <tr class="addnote"><td>Already registered? <a href="login" style="color: darkorange">Click here!</a></td></tr>
+                    <tr class="addnote"><td>Not registered yet? <a href="register" style="color: darkorange">Click here!</a></td></tr>
                 </table>
-            </form:form>
+            </form>
         </div>
     </div>
 </div>
