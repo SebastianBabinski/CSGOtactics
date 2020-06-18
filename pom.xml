@@ -14,6 +14,8 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <spring-security.version>5.0.6.RELEASE</spring-security.version>
+        <spring.version>5.0.6.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -81,6 +83,19 @@
             <artifactId>jaxb-impl</artifactId>
             <version>2.3.0</version>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.security/spring-security-config &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.security</groupId>-->
+<!--            <artifactId>spring-security-config</artifactId>-->
+<!--            <version>5.0.6.RELEASE</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.security</groupId>-->
+<!--            <artifactId>spring-security-taglibs</artifactId>-->
+<!--            <version>4.2.1.RELEASE</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 

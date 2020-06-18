@@ -9,7 +9,7 @@ import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
 
-public class AppInitializer implements WebApplicationInitializer {
+public class AppInitializer  implements WebApplicationInitializer {
     public void onStartup(ServletContext container) {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(AppConfig.class);
