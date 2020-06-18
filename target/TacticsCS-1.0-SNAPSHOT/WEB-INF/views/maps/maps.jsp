@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@    taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
 <!DOCTYPE html>
@@ -35,16 +35,59 @@
     <div class="main_content">
         <div class="header">All maps tactics.</div>
         <div class="info">
-                <%--@elvariable id="tactics" type="java.util.List<babinski.sebastian.model.Tactic"--%>
-                <c:forEach items="${tactics}" var="tactic">
-                    Title: ${tactic.tacticName}<br/>
-                    Map: ${tactic.tacticMap}<br/>
-                    Side: ${tactic.tacticSide}<br/>
-                    Round: ${tactic.tacticRound}<br/>
-                    Description: ${tactic.tacticText}<br/>
-                    Video: ${tactic.tacticURL}<br/>
-                    <hr/>
-                </c:forEach>
+            <%--@elvariable id="tactics" type="java.util.List<babinski.sebastian.model.Tactic"--%>
+            <c:forEach items="${tactics}" var="tactic">
+                <table>
+                    <tr>
+                        <td>
+                            <c:set var="map" value="${tactic.tacticMap}"/>
+                            <c:if test="${map == 'dust2'}">
+                                <img src="/images/128px.png">
+                            </c:if>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Title: ${tactic.tacticName}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Map: ${tactic.tacticMap}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Side: ${tactic.tacticSide}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Round: ${tactic.tacticRound}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <c:set var="video" value="${tactic.tacticURL}"/>
+                                        <c:if test="${empty video}">
+                                        </c:if>
+                                        <c:if test="${not empty video}">
+                                            Video: ${tactic.tacticURL}
+                                        </c:if>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description: ${tactic.tacticText}
+                        </td>
+                    </tr>
+                </table>
+                <hr/>
+            </c:forEach>
         </div>
     </div>
 </div>
