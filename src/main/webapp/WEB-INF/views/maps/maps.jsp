@@ -37,7 +37,7 @@
         <div class="info">
             <%--@elvariable id="tactics" type="java.util.List<babinski.sebastian.model.Tactic"--%>
             <c:forEach items="${tactics}" var="tactic">
-                <table>
+                <table  >
                     <tr>
                         <td>
                             <c:set var="map" value="${tactic.tacticMap}"/>
@@ -49,22 +49,10 @@
                             <table>
                                 <tr>
                                     <td>
-                                        Title: ${tactic.tacticName}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Map: ${tactic.tacticMap}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Side: ${tactic.tacticSide}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Round: ${tactic.tacticRound}
+                                        Title: ${tactic.tacticName} <br />
+                                        Map: ${tactic.tacticMap} <br />
+                                        Side: ${tactic.tacticSide} <br />
+                                        Round: ${tactic.tacticRound} <br />
                                     </td>
                                 </tr>
                                 <tr>
@@ -87,6 +75,7 @@
                     </tr>
                 </table>
                 <hr/>
+                <br class="blank">
             </c:forEach>
         </div>
     </div>

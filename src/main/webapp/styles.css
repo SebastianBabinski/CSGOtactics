@@ -180,5 +180,7 @@ body{
 .wrapper .main_content .addnote {
     color: white;
     font-size: 13px;
+}
 
+.wrapper .main_content .blank {
 }
